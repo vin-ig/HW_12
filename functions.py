@@ -2,15 +2,15 @@ import json
 from pprint import pprint
 
 
-def load_posts(path):
-    with open(path, encoding='utf-8') as file:
+def load_posts(path: str) -> list:
+    with open(path, encoding='Windows-1251') as file:
         return json.load(file)
 
 
 def search_tag(posts, tag):
     result = []
     for post in posts:
-        if tag.lower() in post['content']:
+        if tag.lower() in post['content'].lower():
             result.append(post)
     return result
 
@@ -28,10 +28,3 @@ def check_file(file):
         return f'Тип файлов ".{extension}" не поддерживается, загрузите картинку'
     else:
         return 'Файл загружен!'
-
-# file = FileStorage('D:\Temp\posts.json')
-# data = load_posts('posts.json')
-
-# pprint(search_tag(data, 'вижу'))
-# picture = request.files.get('picture')
-# picture.save(f'./uploads/{picture.filename}')

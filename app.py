@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, send_from_directory, Blueprin
 from functions import *
 
 POST_PATH = "posts.json"
-UPLOAD_FOLDER = "uploads/images"
+UPLOAD_FOLDER = "uploads/images/"
 
 app = Flask(__name__)
 
@@ -23,9 +23,12 @@ def page_tag():
 
 @app.route("/post_uploaded", methods=["POST"])
 def page_post_upload():
-    pic = request.files.get('picture')
+    picture = request.files.get('picture')
+    pic_path = UPLOAD_FOLDER + picture.filename
+    picture.save(pic_path)
     text = request.form.get('content')
-    return render_template('post_uploaded.html', picture=pic, text=text)
+    update_data(POST_PATH, posts, {"pic": pic_path, "content": text})
+    return render_template('post_uploaded.html', picture=pic_path, text=text)
 
 
 @app.route("/post_form", methods=["GET", "POST"])
