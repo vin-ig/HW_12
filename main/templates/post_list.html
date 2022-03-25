@@ -10,16 +10,19 @@
 
     <a href="/" class="link">Назад</a>
 
-    <h1>Посты по запросу "{{s}}"</h1>
+    {% if post_list %}
+        <h1>Посты по запросу "{{s}}"</h1>
 
-    {% for post in post_list %}
-        <div class="post">
-            <img src={{post.get('pic')}} width="100%" alt="">
-            <p>{{post.get('content')}}</p>
-        </div>
-        <hr>
-    {% endfor %}
-
+        {% for post in post_list %}
+            <div class="post">
+                <img src={{post.get('pic')}} width="100%" alt="">
+                <p>{{post.get('content')}}</p>
+            </div>
+            <hr>
+        {% endfor %}
+    {% else %}
+        <h1>Постов по запросу "{{s}}" не найдено</h1>
+    {% endif %}
     <a href="/post_form" class="button">Добавить пост</a>
 
 </main>
