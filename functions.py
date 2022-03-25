@@ -4,7 +4,7 @@ from pprint import pprint
 
 
 def load_posts(path: str) -> list:
-    with open(path, encoding='utf-8') as file:
+    with open(path, encoding='Windows-1251') as file:
         return json.load(file)
 
 
