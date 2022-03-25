@@ -1,13 +1,14 @@
 import json
 from pprint import pprint
+# Windows-1251
 
 
 def load_posts(path: str) -> list:
-    with open(path, encoding='Windows-1251') as file:
+    with open(path, encoding='utf-8') as file:
         return json.load(file)
 
 
-def search_tag(posts, tag):
+def search_tag(posts: list, tag: str) -> list:
     result = []
     for post in posts:
         if tag.lower() in post['content'].lower():

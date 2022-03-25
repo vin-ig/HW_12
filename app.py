@@ -11,11 +11,13 @@ posts = load_posts(POST_PATH)
 
 @app.route("/")
 def page_index():
+    """Главная страница"""
     return render_template('index.html')
 
 
 @app.route("/search")
 def page_tag():
+    """Страница с результатами поиска по словам"""
     s = request.args.get('s')
     post_list = search_tag(posts, s)
     return render_template('post_list.html', s=s, post_list=post_list)
@@ -23,16 +25,19 @@ def page_tag():
 
 @app.route("/post_uploaded", methods=["POST"])
 def page_post_upload():
-    picture = request.files.get('picture')
-    pic_path = UPLOAD_FOLDER + picture.filename
-    picture.save(pic_path)
-    text = request.form.get('content')
-    update_data(POST_PATH, posts, {"pic": pic_path, "content": text})
+    """Страница с загруженным постом"""
+    picture = request.files.get('picture')  # Получаем картинку из формы
+    pic_path = UPLOAD_FOLDER + picture.filename  # Путь к картинке на диске
+    picture.save(pic_path)  # Сохраняем картинку
+    # Проверяем загруженный файл
+    text = request.form.get('content')  # Получаем текст поста
+    update_data(POST_PATH, posts, {"pic": pic_path, "content": text})   # Обновляем список постов
     return render_template('post_uploaded.html', picture=pic_path, text=text)
 
 
 @app.route("/post_form", methods=["GET", "POST"])
 def page_post_form():
+    """Страница с добавлением поста"""
     return render_template('post_form.html')
 
 
