@@ -1,4 +1,5 @@
 # Windows-1251
+# utf-8
 import json
 import logging
 

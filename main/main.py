@@ -18,7 +18,7 @@ def page_tag():
     """Страница с результатами поиска по словам"""
     s = request.args.get('s')
     logging.info(s)  # Записываем в лог поисковые запросы
-    posts = load_posts(POST_PATH)  # Загружаем списов всех постов
+    posts = load_posts(POST_PATH)  # Загружаем список всех постов
     if posts:
         post_list = search_tag(posts, s)  # Ищем слово во всех постах
         return render_template('post_list.html', s=s, post_list=post_list)

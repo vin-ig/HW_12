@@ -19,3 +19,316 @@ Traceback (most recent call last):
     (result, consumed) = self._buffer_decode(data, self.errors, final)
 UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 197: invalid start byte
 INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:20:03] "[35m[1mGET /search?s=���� HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:25:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:25:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:25:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:25:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/Harry/Documents/Python/Homeworks/HW_12/main/main.py", line 21, in page_tag
+    posts = load_posts(POST_PATH)  # Загружаем списов всех постов
+  File "/Users/Harry/Documents/Python/Homeworks/HW_12/functions.py", line 12, in load_posts
+    return json.load(file)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 194: invalid start byte
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:25:53] "[35m[1mGET /search?s=словари HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:13] "GET /search?s=словари HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:23] "GET /search?s=урта HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:28] "GET /search?s=коте HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:36] "GET /search?s=котя HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:36] "GET /uploads/images/cats.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "[36mGET /uploads/images/pancakes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "[36mGET /uploads/images/puppy.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "[36mGET /uploads/images/bmw.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "GET /uploads/images/inst.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "[36mGET /uploads/images/soda.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "GET /uploads/images/sallary.PNG HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "GET /uploads/images/ty-chevo-nadelal.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "GET /uploads/images/bender.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "[36mGET /uploads/images/cats.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:41] "GET /uploads/images/rdj.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:57] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post/uploaded [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/Harry/Documents/Python/Homeworks/HW_12/loader/loader.py", line 31, in page_post_upload
+    picture.save(pic_path)  # Сохраняем картинку
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/werkzeug/datastructures.py", line 3021, in save
+    dst = open(dst, "wb")
+IsADirectoryError: [Errno 21] Is a directory: 'uploads/images/'
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:27:58] "[35m[1mPOST /post/uploaded HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post/uploaded [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/Harry/Documents/Python/Homeworks/HW_12/loader/loader.py", line 31, in page_post_upload
+    picture.save(pic_path)  # Сохраняем картинку
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/werkzeug/datastructures.py", line 3021, in save
+    dst = open(dst, "wb")
+IsADirectoryError: [Errno 21] Is a directory: 'uploads/images/'
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:28:08] "[35m[1mPOST /post/uploaded HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 766-583-224
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:30:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:30:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:30:58] "GET /search?s=утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:30:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:31:02] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:31:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post/uploaded [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/Harry/Documents/Python/Homeworks/HW_12/loader/loader.py", line 31, in page_post_upload
+    picture.save(pic_path)  # Сохраняем картинку
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/werkzeug/datastructures.py", line 3021, in save
+    dst = open(dst, "wb")
+IsADirectoryError: [Errno 21] Is a directory: 'uploads/images/'
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:31:03] "[35m[1mPOST /post/uploaded HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:32:50] "POST /post/uploaded HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:32:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:32:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:32:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:32:57] "GET /search?s=кот HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:32:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:32:57] "[36mGET /uploads/images/cats.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:14] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:16] "POST /post/uploaded HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:19] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:24] "POST /post/uploaded HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:34] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:33:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:34:13] "POST /post/uploaded HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:34:13] "GET /uploads/images/philippines.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:34:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:34:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:34:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/Harry/Documents/Python/Homeworks/HW_12/main/main.py", line 21, in page_tag
+    posts = load_posts(POST_PATH)  # Загружаем списов всех постов
+  File "/Users/Harry/Documents/Python/Homeworks/HW_12/functions.py", line 13, in load_posts
+    return json.load(file)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/encodings/cp1251.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x98 in position 872: character maps to <undefined>
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:34:26] "[35m[1mGET /search?s=фили HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/Harry/Documents/Python/Homeworks/HW_12/main/main.py", line 21, in page_tag
+    posts = load_posts(POST_PATH)  # Загружаем список всех постов
+  File "/Users/Harry/Documents/Python/Homeworks/HW_12/functions.py", line 13, in load_posts
+    return json.load(file)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/encodings/cp1251.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x98 in position 872: character maps to <undefined>
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:38:02] "[35m[1mGET /search?s=фили HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/Harry/Documents/Python/Homeworks/HW_12/main/main.py", line 21, in page_tag
+    posts = load_posts(POST_PATH)  # Загружаем список всех постов
+  File "/Users/Harry/Documents/Python/Homeworks/HW_12/functions.py", line 13, in load_posts
+    return json.load(file)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/encodings/cp1251.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x98 in position 872: character maps to <undefined>
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:38:04] "[35m[1mGET /search?s=фили HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:38:47] "GET /search?s=фили HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:38:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:38:47] "[36mGET /uploads/images/philippines.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:38:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:38:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:39:04] "GET /search?s=еда HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:39:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:39:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:39:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:39:15] "GET /search?s=зп HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:39:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:39:15] "[36mGET /uploads/images/sallary.PNG HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:40:49] "GET /search?s=зп HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:40:49] "[36mGET /uploads/images/sallary.PNG HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:40:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:40:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:40:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:40:54] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:40:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:40:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:40:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:00] "GET /search?s=словари HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:06] "GET /search?s=зп HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:06] "[36mGET /uploads/images/sallary.PNG HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:13] "GET /search?s=прога HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:13] "[36mGET /uploads/images/ty-chevo-nadelal.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:26] "GET /search?s=фили HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:29] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:37] "POST /post/uploaded HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:44] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:41:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:root:Ошибка доступа к файлу
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:25] "GET /search?s=зп HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:31] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:root:Ошибка доступа к файлу
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:41] "POST /post/uploaded HTTP/1.1" 200 -
+ERROR:root:Ошибка доступа к файлу
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:41] "POST /post/uploaded HTTP/1.1" 200 -
+ERROR:root:Ошибка доступа к файлу
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:41] "POST /post/uploaded HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:42:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:03] "GET /search?s=зп HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:03] "[36mGET /uploads/images/sallary.PNG HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:06] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:13] "POST /post/uploaded HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:39] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:42] "POST /post/uploaded HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:44] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:50] "POST /post/uploaded HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:53] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:43:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:18] "POST /post/uploaded HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:18] "GET /uploads/images/philippines.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:28] "GET /post/form HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:30] "POST /post/uploaded HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:38] "GET /search?s=фили HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:38] "[36mGET /uploads/images/philippines.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:42] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /uploads/images/puppy.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /uploads/images/pancakes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /uploads/images/bmw.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /uploads/images/inst.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /uploads/images/soda.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /uploads/images/sallary.PNG HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /uploads/images/ty-chevo-nadelal.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /uploads/images/bender.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /uploads/images/cats.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /uploads/images/philippines.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:44:43] "[36mGET /uploads/images/rdj.jpg HTTP/1.1[0m" 304 -

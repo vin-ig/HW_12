@@ -32,7 +32,7 @@ def page_post_upload():
         text = request.form.get('content')  # Получаем текст поста
     except FileNotFoundError:
         return render_template('loader_error.html', message='При добавлении поста произошла ошибка')
-    except PermissionError:
+    except (PermissionError, IsADirectoryError):
         return render_template('loader_error.html', message='Без изображения пост добавить нельзя')
 
     # Если все прошло успешно, показываем загруженный пост
