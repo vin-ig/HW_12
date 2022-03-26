@@ -1,21 +1,40 @@
 from flask import Blueprint, request, render_template, send_from_directory
-from functions import *
+from functions import load_posts, update_data, check_filename
 from config import POST_PATH, UPLOAD_FOLDER
+import logging
 
 loader = Blueprint('loader', __name__, template_folder='templates')
-
-posts = load_posts(POST_PATH)
+logging.basicConfig(filename='../log.log', level=logging.INFO)
 
 
 @loader.route("/post_uploaded", methods=["POST"])
 def page_post_upload():
     """Страница с загруженным постом"""
-    picture = request.files.get('picture')  # Получаем картинку из формы
-    pic_path = UPLOAD_FOLDER + picture.filename  # Путь к картинке на диске
-    picture.save(pic_path)  # Сохраняем картинку
-    # Проверяем загруженный файл
-    text = request.form.get('content')  # Получаем текст поста
-    update_data(POST_PATH, posts, {"pic": pic_path, "content": text})   # Обновляем список постов
+    # Загружаем файл с постами и исключаем ошибку
+    posts = load_posts(POST_PATH)
+    if not posts:
+        return render_template('error.html', message='Ошибка загрузки данных')
+
+    # Получаем картинку из формы
+    picture = request.files.get('picture')
+
+    # Проверяем расширение файла
+    check = check_filename(picture.filename)
+    if check:
+        message = f'Тип файлов ".{check}" не поддерживается'
+        logging.info(message)
+        return render_template('error.html', message=message)
+
+    # Исключаем ошибку загрузки нового поста
+    try:
+        pic_path = UPLOAD_FOLDER + picture.filename  # Путь к картинке на диске
+        picture.save(pic_path)  # Сохраняем картинку
+        text = request.form.get('content')  # Получаем текст поста
+    except:
+        return render_template('error.html', message='При добавлении поста произошла ошибка')
+
+    # Если все прошло успешно, показываем загруженный пост
+    update_data(POST_PATH, posts, {"pic": pic_path, "content": text})  # Обновляем список постов
     return render_template('post_uploaded.html', picture=pic_path, text=text)
 
 

@@ -1,10 +1,10 @@
 from flask import Blueprint, request, render_template
-from functions import *
+from functions import load_posts, search_tag
 from config import POST_PATH
+import logging
 
 main = Blueprint('main', __name__, template_folder='templates')
-
-posts = load_posts(POST_PATH)
+logging.basicConfig(filename='../log.log', level=logging.INFO)
 
 
 @main.route("/")
@@ -17,5 +17,10 @@ def page_index():
 def page_tag():
     """Страница с результатами поиска по словам"""
     s = request.args.get('s')
-    post_list = search_tag(posts, s)
-    return render_template('post_list.html', s=s, post_list=post_list)
+    logging.info(s)  # Записываем в лог поисковые запросы
+    posts = load_posts(POST_PATH)  # Загружаем списов всех постов
+    if posts:
+        post_list = search_tag(posts, s)  # Ищем слово во всех постах
+        return render_template('post_list.html', s=s, post_list=post_list)
+    else:
+        return render_template('error.html')
