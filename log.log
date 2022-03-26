@@ -1,174 +1,21 @@
 INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:37] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:37] "GET /static/style.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:41] "GET /search?s=инст HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:41] "GET /uploads/images/inst.jpeg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:44] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:47] "GET /search?s=ыыы HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:50] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:54] "GET /search?s=блин HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:54] "GET /uploads/images/pancakes.jpg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:56] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:02:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:03:00] "GET /search?s=повор HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:03:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:03:00] "GET /uploads/images/bmw.jpg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:03:02] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:03:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:03:26] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:03:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:03:26] "GET /uploads/images/rdj.jpg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:05:54] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:05:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:05:57] "GET /search?s=дом HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:05:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:05:57] "[36mGET /uploads/images/rdj.jpg HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:07:27] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:07:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:07:32] "GET /search?s=собак HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:07:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:07:37] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:07:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:07:40] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:07:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:08:03] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:08:03] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:08:03] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:08:20] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:08:20] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:08:20] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:09] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:09] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:09] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:10] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:13] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:44] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:44] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:44] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:47] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:48] "GET /search?s= HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:50] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:09:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:10:01] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:10:01] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:10:01] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:10:50] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:10:50] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:10:50] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:03] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:03] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:03] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:20] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:20] "POST /post_uploaded HTTP/1.1" 200 -
-ERROR:root:Ошибка доступа к файлу
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:20] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:33] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:34] "GET /uploads/images/bender.jpeg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:42] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:47] "GET /search?s=поиск HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:47] "[36mGET /uploads/images/bender.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:49] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:57] "GET /search?s=утр HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:11:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:12:00] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:12:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:12:12] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:12:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:30:33] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:30:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:30:34] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:30:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:30:41] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:30:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:32:12] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:32:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:32:19] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:32:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:32:22] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:32:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:34:31] "GET /search?s=фыва HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:34:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:34:33] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:34:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:34:42] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:34:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:35:07] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:35:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:35:18] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:35:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:35:44] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:35:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:35:49] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:35:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:37:39] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:37:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:38:46] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:38:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:38:52] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:38:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:39:36] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:39:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:39:40] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:39:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:43:28] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:43:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:43:33] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:43:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:43:49] "[31m[1mGET /post_uploaded HTTP/1.1[0m" 405 -
-INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:45:12] "[31m[1mGET /post_uploaded HTTP/1.1[0m" 405 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:45:13] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:45:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:45:15] "GET /post_form HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:45:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:45:19] "POST /post_uploaded HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 18:45:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\vin-i\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vin-i\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vin-i\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vin-i\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\vin-i\PycharmProjects\Homeworks\HW_12\main\main.py", line 21, in page_tag
+    posts = load_posts(POST_PATH)  # Загружаем списов всех постов
+  File "C:\Users\vin-i\PycharmProjects\Homeworks\HW_12\functions.py", line 12, in load_posts
+    return json.load(file)
+  File "C:\Users\vin-i\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\vin-i\AppData\Local\Programs\Python\Python310\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 197: invalid start byte
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2022 22:20:03] "[35m[1mGET /search?s=блин HTTP/1.1[0m" 500 -

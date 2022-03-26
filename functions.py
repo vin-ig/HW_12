@@ -8,7 +8,7 @@ logging.basicConfig(filename='log.log', level=logging.ERROR)
 def load_posts(path: str) -> list | None:
     """Загружает посты из json-файла"""
     try:
-        with open(path, encoding='Windows-1251') as file:
+        with open(path, encoding='utf-8') as file:
             return json.load(file)
     except FileNotFoundError:
         logging.error("Ошибка доступа к файлу")

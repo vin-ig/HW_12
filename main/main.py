@@ -23,4 +23,4 @@ def page_tag():
         post_list = search_tag(posts, s)  # Ищем слово во всех постах
         return render_template('post_list.html', s=s, post_list=post_list)
     else:
-        return render_template('error.html')
+        return render_template('main_error.html')

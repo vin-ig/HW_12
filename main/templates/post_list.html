@@ -15,15 +15,15 @@
 
         {% for post in post_list %}
             <div class="post">
-                <img src={{post.get('pic')}} width="100%" alt="">
-                <p>{{post.get('content')}}</p>
+                <img src={{post.pic}} width="100%" alt="">
+                <p>{{post.content}}</p>
             </div>
             <hr>
         {% endfor %}
     {% else %}
         <h3>Постов по запросу "{{s}}" не найдено</h3>
     {% endif %}
-    <a href="/post_form" class="button">Добавить пост</a>
+    <a href="/post/form" class="button">Добавить пост</a>
 
 </main>
 </body>
